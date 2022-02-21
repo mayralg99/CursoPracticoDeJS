@@ -4,66 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./figuras.css">
     <title>Figuras geométricas</title>
 </head>
 <body>
-    <h1>Cálculo de área y perímetro de figuras geométricas</h1>
+    <header>
+        <h1 class="title">Cálculo de área y perímetro de figuras geométricas</h1>
+    </header>
     
-    <h3>Cuadrado</h3>
-    <div>
-        <label for="ladoCuadrado">Ingrese la medida en cm del lado: </label>
-        <input type="number" id="ladoCuadrado">
-        <button type="button" id="cuadrado" onclick="calcularAreaPerimetroCuadrado()">Calcular área y perímetro</button>
-        <p id="areaCuadrado">Área: </p>
-        <p id="perimetroCuadrado">Perímetro: </p>
-    </div>
+    <main class="container">
+        <div class="figura cuadrado">
+            <h3>Cuadrado</h3>
+            <div class="row">
+                <label for="ladoCuadrado">Ingrese la medida en cm del lado: </label>
+                <input type="number" id="ladoCuadrado">
+            </div>
+            <div class="row">
+                <p id="areaCuadrado">Área: </p>
+                <p id="perimetroCuadrado">Perímetro: </p>
+                <button class="boton" type="button" id="cuadrado" onclick="calcularAreaPerimetroCuadrado()">Calcular área y perímetro</button>
+            </div>
+        </div>
 
-    <h3>Rectángulo</h3>
-    <div>
-        <label for="ladoRectangulo1">Ingrese la medida en cm del lado 1: </label>
-        <input type="number" id="ladoRectangulo1">
-        <label for="ladoRectangulo2">Ingrese la medida en cm del lado 2: </label>
-        <input type="number" id="ladoRectangulo2">
-        <button type="button" id="rectangulo" onclick="calcularAreaPerimetroRectangulo()">Calcular área y perímetro</button>
-        <p id="areaRectangulo">Área: </p>
-        <p id="perimetroRectangulo">Perímetro: </p>
-    </div>
+        <div class="figura rectangulo">
+            <h3>Rectángulo</h3>
+            <div class="row">
+                <label for="ladoRectangulo1">Ingrese la medida en cm del lado 1: </label>
+                <input type="number" id="ladoRectangulo1">
+            </div>
+            <div class="row">
+                <label for="ladoRectangulo2">Ingrese la medida en cm del lado 2: </label>
+                <input type="number" id="ladoRectangulo2">
+            </div>
+            <div class="row">
+                <p id="areaRectangulo">Área: </p>
+                <p id="perimetroRectangulo">Perímetro: </p>
+                <button class="boton" type="button" id="rectangulo" onclick="calcularAreaPerimetroRectangulo()">Calcular área y perímetro</button>
+            </div>
+        </div>
 
-    <h3>Triángulo</h3>
-    <div>
-        <label for="base">Ingrese la medida en cm de la base: </label>
-        <input type="number" id="base">
-        <label for="ladot2">Ingrese la medida en cm del lado 2: </label>
-        <input type="number" id="ladot2">
-        <label for="ladot3">Ingrese la medida en cm del lado 3: </label>
-        <input type="number" id="ladot3">
-        <label for="altura">Ingrese la medida en cm de la altura: </label>
-        <input type="number" id="altura">
-        <button type="button" id="triangulo" onclick="calcularAreaPerimetroTriangulo()">Calcular área</button>
-        <p id="areaTriangulo">Área: </p>
-        <p id="perimetroTriangulo">Perímetro: </p>
-    </div>
+        <div class="figura triangulo">
+            <h3>Triángulo</h3>
+            <div class="row">
+                <label for="base">Ingrese la medida en cm de la base: </label>
+                <input type="number" id="base">
+            </div>
+            <div class="row">
+                <label for="ladot2">Ingrese la medida en cm del lado 2: </label>
+                <input type="number" id="ladot2">
+            </div>
+            <div class="row">
+                <label for="ladot3">Ingrese la medida en cm del lado 3: </label>
+                <input type="number" id="ladot3">
+            </div>
+            <div class="row">
+                <label for="altura">Ingrese la medida en cm de la altura: </label>
+                <input type="number" id="altura">
+            </div>
+            <div class="row">
+                <p id="areaTriangulo">Área: </p>
+                <p id="perimetroTriangulo">Perímetro: </p>
+                <button class="boton" type="button" id="triangulo" onclick="calcularAreaPerimetroTriangulo()">Calcular área y perímetro</button>
+            </div>
+        </div>
 
-    <h3>Círculo</h3>
-    <div>
-        <label for="radio">Ingrese la medida en cm del radio: </label>
-        <input type="number" id="radio">
-        <button type="button" id="circulo" onclick="calcularAreaPerimetroCirculo()">Calcular área y perímetro</button>
-        <p id="areaCirculo">Área: </p>
-        <p id="perimetroCirculo">Perímetro: </p>
-    </div>
+        <div class="figura circulo">
+            <h3>Círculo</h3>
+            <div class="row">
+                <label for="radio">Ingrese la medida en cm del radio: </label>
+                <input type="number" id="radio">
+            </div>
+            <div class="row">
+                <p id="areaCirculo">Área: </p>
+                <p id="perimetroCirculo">Perímetro: </p>
+                <button class="boton" type="button" id="circulo" onclick="calcularAreaPerimetroCirculo()">Calcular área y perímetro</button>
+            </div>
+        </div>
 
-    <h3>Calcula la altura de un triángulo isóceles</h3>
-    <div>
-        <label for="basetI">Ingrese la medida en cm de la base: </label>
-        <input type="number" id="basetI">
-        <label for="ladotA">Ingrese la medida en cm del lado A: </label>
-        <input type="number" id="ladotA">
-        <label for="ladotB">Ingrese la medida en cm del lado B: </label>
-        <input type="number" id="ladotB">
-        <button type="button" id="trianguloIsoceles" onclick="calcularAlturaTrianguloIsoceles()">Calcular altura</button>
-        <p id="alturaTrianguloIsoceles">Altura: </p>
-    </div>
+        <div class="figura isoceles">
+            <h3>Calcula la altura de un triángulo isóceles</h3>
+            <div class="row">
+                <label for="basetI">Ingrese la medida en cm de la base: </label>
+                <input type="number" id="basetI">
+            </div>
+            <div class="row">
+                <label for="ladotA">Ingrese la medida en cm del lado A: </label>
+                <input type="number" id="ladotA">
+            </div>
+            <div class="row">
+                <label for="ladotB">Ingrese la medida en cm del lado B: </label>
+                <input type="number" id="ladotB">
+            </div>
+            <div class="row">
+                <p id="alturaTrianguloIsoceles">Altura: </p>
+                <button class="boton" type="button" id="trianguloIsoceles" onclick="calcularAlturaTrianguloIsoceles()">Calcular altura</button>
+            </div>
+        </div>
+    </main>
 
     <script src="./figuras.js"></script>
 </body>
