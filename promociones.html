@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./promociones.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Calculadora de precios y porcentajes</h1>
+    </header>
+
+    <main class="container">
+        <div class="form">
+            <div class="row">
+                <label for="precio">Escribe el precio del artículo: $ </label>
+                <input type="number" id="precio">
+            </div>
+            
+            <div class="row">
+                <label for="descuento">Porcentaje de descueto: %</label>
+                <input type="number" id="descuento">
+            </div>
+
+            <div class="row">
+                <p id="precioDescuentoText">El precio a pagar es: <span id="precioDescuento"></span></p>
+            </div>
+
+            <div class="row row-button">
+                <button type="button" class="boton" onclick="calcularPrecioDescuento()">Calcular precio con descuento</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./promociones.js"></script>
+</body>
+</html>
