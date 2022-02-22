@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estadistica.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="title">
+        <h1>Herramientas estadísticas</h1>
+    </header>
+    <main class="container">
+        <div class="estadistica">
+            <div class="row">
+                <label for="datos">Ingrese el conjunto de datos separados por una ',': </label>
+                <input type="text" id="datos">
+            </div>
+
+            <div class="container-estadistica">
+                <div class="row-estadistica media">
+                    <p id="mediaText">La media aritmética es: <span id="mediaAritmetica"></span></p>
+                    <button class="boton" type="button" onclick="calcularMedia()">Calcular media aritmética</button>
+                </div>
+                <div class="row-estadistica mediana">
+                    <p id="medianaText">La mediana es: <span id="mediana"></span></p>
+                    <button class="boton" type="button" onclick="calcularMediana()">Calcular mediana</button>
+                </div>
+                <div class="row-estadistica moda">
+                    <p id="modaText">La moda es: <span id="moda"></span></p>
+                    <button class="boton" type="button" onclick="calcularModa()">Calcular moda</button>
+                </div>                
+            </div>
+        </div>
+
+        <!--<div class="estadistica">
+            <h3>Mediana</h3>
+            <label for="mediana">Ingrese el conjunto de datos separados por una ',': </label>
+            <input type="text" id="mediana">
+            <p id="medianaText">La mediana es: <span id="medianaN"></span></p>
+            <button type="button" onclick="calcularMediana()">Calcular mediana</button>
+        </div>
+        <div class="estadistica">
+
+        </div>-->
+    </main>
+
+    <script src="./estadistica.js"></script>
+</body>
+</html>

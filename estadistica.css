@@ -1,0 +1,98 @@
+:root{
+    /*Color palette*/
+    --very-light-pink:#c7c7c7;
+    --text-input-field:#f7f7f7;
+    --hospital-green: #acd982;
+    --white: #fff;
+    --black:#000;
+
+    /*Medidas*/
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h3, p{
+    margin: 0;
+}
+
+p {
+    font-weight: bold;
+}
+
+.title{
+    text-align: center;
+    margin-top: 24px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1200px);
+    gap: 24px;
+    place-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.estadistica{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-estadistica{
+    height: 200px;
+    display: grid;
+    grid-template-areas: "media media"
+                        "mediana mediana"
+                        "moda moda";
+    margin-top: 24px;
+}
+
+.media{
+    grid-area: media;
+}
+
+.mediana{
+    grid-area: mediana;
+}
+
+.moda{
+    grid-area: moda;
+}
+
+    .media, .mediana, .moda{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.boton{
+    width: 200px;
+    height: 20px;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--hospital-green);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#datos{
+    width: 1194px;
+    height: 25px;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+#mediaAritmetica, #mediana, #moda{
+    font-weight: 300;
+}
