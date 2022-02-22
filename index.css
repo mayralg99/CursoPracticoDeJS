@@ -1,0 +1,61 @@
+:root{
+    /*Color palette*/
+    --very-light-pink:#c7c7c7;
+    --text-input-field:#f7f7f7;
+    --hospital-green: #acd982;
+    --white: #fff;
+    --black:#000;
+
+    /*Medidas*/
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h3, p{
+    margin: 0;
+}
+
+p, a {
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.title{
+    text-align: center;
+    margin-top: 24px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
+    gap: 24px;
+    place-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.taller{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #acd982;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.taller img{
+    width: 400px;
+    height: 400px;
+}
